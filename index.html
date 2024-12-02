@@ -17,78 +17,88 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Bento grid</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
-      <div id="container">
-        <div class="container" id="child-item1">
-          <div class=""><p>Create and schedule content quicker.</p></div>
-          <div class="h-50 w-100">
-            <img class="" src="./assets/images/illustration-create-post.webp" />
+      <div class='container' id="main-grid">
+        <section class="content-card content-card-medium" id="create-post">
+          <h2>Create and schedule content <span> <i style="color: var(--color-purple)"> quicker. </i> </span></h2>
+          <div class="content-card_media">
+            <img src="./assets/images/illustration-create-post.webp" />
           </div>
-        </div>
-        <div class="container d-flex flex-column text-center" id="child-item2">
-          <div><p class="h1">Social Media 10x Faster with AI</p></div>
-          <div><img src="./assets/images/illustration-five-stars.webp" /></div>
-          <div><p>Over 4,000 5-star reviews</p></div>
-        </div>
-        <div class="container text-center" id="child-item3">
-          <div>
-            <p>Schedule to social media.</p>
+        </section>
+        <section
+          class="content-card content-card-large text-center"
+          id="social-media_tip"
+        >
+          <span class="display-4"> Social Media <span style="color: var(--color-peach)"> 10x </span> <i> Faster</i> with AI </span>
+          <div class="content-card_media">
+            <img src="./assets/images/illustration-five-stars.webp" />
           </div>
-          <div class="ms-5 my-3">
+          <p class="small">Over 4,000 5-star reviews</p>
+        </section>
+ 
+        <section class="content-card content-card-medium text-center" id="schedule-post">
+          <h3>Schedule to social media.</h3>
+          <div class="content-card_media my-3">
             <img
-              class="img-fluid"
+              class=""
               src="assets/images/illustration-schedule-posts.webp"
             />
           </div>
-          <div>
+          <div class="content-card_subheader">
             <p>
               Optimize post timings to publish content at the perfect time for
               your audience.
             </p>
           </div>
-        </div>
-        <div class="container" id="child-item4">
-          <div><p>Write your content using AI.</p></div>
-          <div>
-            <img class="" src="/assets/images/illustration-ai-content.webp" />
+        </section>
+
+        <section class="content-card content-card-medium" id="content-use">
+          <h2>Write your content using AI.</h2>
+          <div class="content-card_media">
+            <img src="/assets/images/illustration-ai-content.webp" />
           </div>
-        </div>
-        <div class="nested-container" id="child-item5">
-          <div class="" id="child-item1-of-5">
-            <div class="img-container">
+        </section>
+<!-- 
+        <section class="content-card content-card-large" id="multiple-messages">
+          <article class="content-card_child-item content-card-small" id="multiple-accounts">
+            <div class="content-card_media">
               <img src="assets/images/illustration-multiple-platforms.webp" />
             </div>
-            <div class="text-container">
-              <p>Manage multiple accounts and platforms.</p>
-            </div>
-          </div>
-          <div class="container text-center" id="child-item2-of-5">
-            <div class="text-container">
-              Maintain a consistent posting schedule.
-            </div>
-            <div class="img-container">
+            <h2>Manage multiple accounts and platforms.</h2>
+          </article>
+          <article
+            class="content-card_child-item content-card-small text-center"
+            id="posting-schedule"
+          >
+            <h2>Maintain a consistent posting schedule.</h2>
+            <div class="content-card_media ">
               <img src="/assets/images/illustration-consistent-schedule.webp" />
             </div>
-          </div>
-          <div id="child-item3-of-5">
-            <div class="text-container">56% faster audience growth</div>
-            <div class="img-container">
+          </article>
+          <article class="content-card_child-item content-card-small" id="audience-growth">
+            <h2>56% faster audience growth</h2>
+            <div class="content-card_media">
               <img src="assets/images/illustration-audience-growth.webp" />
             </div>
-          </div>
-        </div>
-        <div class="d-flex" id="child-item6">
-          <div class="img-container">
+          </article>
+        </section>
+
+        <section class="content-card d-flex" id="non-stop">
+          <div class="content-card_media">
             <img src="assets/images/illustration-grow-followers.webp" />
           </div>
-          <div class="text-container">
-            <p>Grow followers with non-stop content.</p>
-          </div>
-        </div>
+          <h2>Grow followers with non-stop content.</h2>
+        </section> -->
       </div>
     </main>
     <!--   Grow followers with non-stop content.   -->
