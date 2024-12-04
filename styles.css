@@ -19,13 +19,17 @@
   /* border: 1px solid red; */
 }
 
-body {
+html body {
   font-size: 18px;
   font-family: "DM Sans";
-  /* font-weight: 800; */
   letter-spacing: -1.5px;
 }
 
+h2,
+h3,
+p {
+  line-height: 90%;
+}
 #main-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -44,7 +48,7 @@ img {
 
 #create-post {
   grid-column: var(--card-medium);
-  grid-row: 1 / span 6;
+  grid-row: 1 / span 5;
   background-color: var(--color-peach-light);
   padding: var(--spacing-standard);
   border: 1px solid red;
@@ -53,7 +57,7 @@ img {
 #social-media_tip {
   letter-spacing: normal;
   grid-column: var(--card-large);
-  grid-row: 1 / span 5;
+  grid-row: 1 / span 4;
   background-color: var(--color-purple);
   padding: 1rem 1rem 1rem 1rem;
   color: white;
@@ -75,20 +79,51 @@ img {
 }
 
 #schedule-post .content-card_media {
-  width: 80%;
+  width: 75%;
+  height: 50%;
   overflow: hidden;
   margin: 0 auto;
-  border: 1px solid red;
+  border-radius: 5px;
+
+  /* border: 1px solid red; */
 }
 #schedule-post img {
-  width: 120%;
-  margin-left: 25%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  /* ^ I dont know what this does  */
 }
 
 #content-use {
-  grid-row: 7 / span 6;
+  grid-row: 6 / span 7;
   grid-column: var(--card-medium);
-  background-color: var(--color-peach-light);
+  background-color: var(--color-peach);
   padding: var(--spacing-standard);
   border: 1px solid red;
+}
+
+#multiple-messages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row: 5 / span 8;
+  grid-column: span 6 ;
+  border: 1px solid red;
+} 
+
+ #multiple-messages article{
+  grid-row: span 1; 
+  grid-column: span 1 ; 
+  border: 1px solid red;
+
+}
+
+#posting-schedule {
+  overflow: hidden;
+}
+
+#non-stop {
+  grid-row: 9 / 12;
+  grid-column: 10 / 12;
 }
